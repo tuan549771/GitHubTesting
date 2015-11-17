@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ConfigurationsInformation>
+  <Configuration NameScriptConfiguaration="PwCycle_DataCmp.srt">
+	<OptionTesting OptionTitle="Select test option" OptionName="0: Interactive Short; 1: Auto Short; 2: Interactive Full; 3: Auto Full" SelectedModeDefaultValue="2">
+	  <ModeValue Mode="0">Interactive Short</ModeValue>
+	  <ModeValue Mode="1">Auto Short</ModeValue>
+	  <ModeValue Mode="2">Interactive Full</ModeValue>
+	  <ModeValue Mode="3">Auto Full</ModeValue>
+	</OptionTesting>
+	<OptionTesting OptionTitle="Select Power Cycle Method" OptionName="0: ULINK Power Control for SATA/SAS Device; 1: ULINK Power Control for PCIe Device; 2: Others" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">ULINK Power Control for SATA/SAS Device</ModeValue>
+	  <ModeValue Mode="1">ULINK Power Control for PCIe Device</ModeValue>
+	  <ModeValue Mode="2">Others</ModeValue>
+	</OptionTesting>	
+	<OptionTesting OptionTitle="Standby Immediate before Power Cycle?" OptionName="0: NO; 1: YES" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">NO</ModeValue>
+	  <ModeValue Mode="1">YES</ModeValue>
+	</OptionTesting>
+	<OptionTesting OptionTitle="Power Interruption Test with Data Compare" OptionName="Running Time in hours?" SelectedModeDefaultValue="9">
+	  <ModeValue Mode="1">1</ModeValue>
+	  <ModeValue Mode="2">2</ModeValue>
+	  <ModeValue Mode="3">3</ModeValue>
+	  <ModeValue Mode="4">4</ModeValue>
+	  <ModeValue Mode="5">5</ModeValue>
+	  <ModeValue Mode="6">6</ModeValue>
+	  <ModeValue Mode="7">7</ModeValue>
+	  <ModeValue Mode="8">8</ModeValue>
+	  <ModeValue Mode="9">9</ModeValue>
+	  <ModeValue Mode="10">10</ModeValue>
+	  <ModeValue Mode="11">11</ModeValue>
+	  <ModeValue Mode="12">12</ModeValue>
+	  <ModeValue Mode="13">13</ModeValue>
+	  <ModeValue Mode="14">14</ModeValue>
+	  <ModeValue Mode="15">15</ModeValue>
+	  <ModeValue Mode="16">16</ModeValue>
+	  <ModeValue Mode="17">17</ModeValue>
+	  <ModeValue Mode="18">18</ModeValue>
+	  <ModeValue Mode="19">19</ModeValue>
+	  <ModeValue Mode="20">20</ModeValue>
+	  <ModeValue Mode="21">21</ModeValue>
+	  <ModeValue Mode="22">22</ModeValue>
+	  <ModeValue Mode="23">23</ModeValue>
+	  <ModeValue Mode="24">24</ModeValue>
+	</OptionTesting>
+	<OptionTesting OptionTitle="Power Interruption Test with Data Compare" OptionName="Select commands for test (0: both DMA and NCQ; 1: DMA only; 2: NCQ only)" SelectedModeDefaultValue="1">
+	  <ModeValue Mode="0">both DMA and NCQ</ModeValue>
+	  <ModeValue Mode="1">DMA only</ModeValue>
+	  <ModeValue Mode="2">NCQ only</ModeValue>
+	</OptionTesting>	
+	<OptionTesting OptionTitle="Power Interruption Test with Data Compare" OptionName="Max. # of Loop for DMA Test" SelectedModeDefaultValue="1">
+	  <ModeValue Mode="5000">5000</ModeValue>
+	  <ModeValue Mode="50000">50000</ModeValue>
+	</OptionTesting>	
+	<OptionTesting OptionTitle="Power Interruption Test with Data Compare" OptionName="Max. # of Loop for NCQ Test" SelectedModeDefaultValue="1">
+	  <ModeValue Mode="5000">5000</ModeValue>
+	  <ModeValue Mode="50000">50000</ModeValue>
+	</OptionTesting>
+	<OptionTesting OptionTitle="Power Interruption Test with Data Compare" OptionName="FLUSH for GoodData? (0:No, 1:Yes)" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">No</ModeValue>
+	  <ModeValue Mode="1">Yes</ModeValue>
+	</OptionTesting>
+	<OptionTesting OptionTitle="Power Interruption Test with Data Compare" OptionName="Power On Ready (POR) Timeout Value (in second)" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="8">8</ModeValue>
+	</OptionTesting>
+	<OptionTesting OptionTitle="Power Interruption Test with Data Compare" OptionName="Display command info during Good Data Writing? (0:No, 1:Only WrCmd, 2:All Cmds)" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">No</ModeValue>
+	  <ModeValue Mode="1">Only WrCmd</ModeValue>
+	  <ModeValue Mode="2">All Cmds</ModeValue>
+	</OptionTesting>
+	<OptionTesting OptionTitle="Power Interruption Test with Data Compare" OptionName="Display command info during powering off? (0:No, 1:Only WrCmd, 2:All Cmds)" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">No</ModeValue>
+	  <ModeValue Mode="1">Only WrCmd</ModeValue>
+	  <ModeValue Mode="2">All Cmds</ModeValue>
+	</OptionTesting>
+	<OptionTesting OptionTitle="Power Interruption Test with Data Compare" OptionName="Display Buffer info for the mismatched Power Off Data? (0:No, 1:Yes)" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">No</ModeValue>
+	  <ModeValue Mode="1">Yes</ModeValue>
+	</OptionTesting>
+  </Configuration>
+
+  <Configuration NameScriptConfiguaration="ATAcmds.srt">
+	<OptionTesting OptionTitle="Select test option" OptionName="0: Interactive w/Brief; 1: Auto w/Brief; 2: Interactive w/Detail; 3: Auto w/Detail; 4: Halt when Failed (default: 4)" SelectedModeDefaultValue="4">
+	  <ModeValue Mode="0">Interactive w/Brief</ModeValue>
+	  <ModeValue Mode="1">Auto w/Brief</ModeValue>
+	  <ModeValue Mode="2">Interactive w/Detail</ModeValue>
+	  <ModeValue Mode="3">Auto w/Detail</ModeValue>
+	  <ModeValue Mode="4">Halt when Failed (default: 4)</ModeValue>
+	</OptionTesting>
+	<OptionTesting OptionTitle="Select Power Cycle Method" OptionName="0: ULINK Power Control for SATA/SAS Device; 1: ULINK Power Control for PCIe Device; 2: Others" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">ULINK Power Control for SATA/SAS Device</ModeValue>
+	  <ModeValue Mode="1">ULINK Power Control for PCIe Device</ModeValue>
+	  <ModeValue Mode="2">Others</ModeValue>
+	</OptionTesting>	
+	<OptionTesting OptionTitle="Standby Immediate before Power Cycle?" OptionName="0: NO; 1: YES" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">NO</ModeValue>
+	  <ModeValue Mode="1">YES</ModeValue>
+	</OptionTesting>
+  </Configuration>
+
+  <Configuration NameScriptConfiguaration="ATA_DSM.srt">
+	<OptionTesting OptionTitle="Select test option" OptionName="0: Interactive w/Brief; 1: Auto w/Brief; 2: Interactive w/Detail; 3: Auto w/Detail; 4: Halt when Failed (default: 4)" SelectedModeDefaultValue="4">
+	  <ModeValue Mode="0">Interactive w/Brief</ModeValue>
+	  <ModeValue Mode="1">Auto w/Brief</ModeValue>
+	  <ModeValue Mode="2">Interactive w/Detail</ModeValue>
+	  <ModeValue Mode="3">Auto w/Detail</ModeValue>
+	  <ModeValue Mode="4">Halt when Failed (default: 4)</ModeValue>
+	</OptionTesting>
+	<OptionTesting OptionTitle="Select Power Cycle Method" OptionName="0: ULINK Power Control for SATA/SAS Device; 1: ULINK Power Control for PCIe Device; 2: Others" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">ULINK Power Control for SATA/SAS Device</ModeValue>
+	  <ModeValue Mode="1">ULINK Power Control for PCIe Device</ModeValue>
+	  <ModeValue Mode="2">Others</ModeValue>
+	</OptionTesting>	
+	<OptionTesting OptionTitle="Standby Immediate before Power Cycle?" OptionName="0: NO; 1: YES" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">NO</ModeValue>
+	  <ModeValue Mode="1">YES</ModeValue>
+	</OptionTesting>
+  </Configuration>
+
+  <Configuration NameScriptConfiguaration="RandomDMACmdTime_Distribution.srt">
+	<OptionTesting OptionTitle="Select test option" OptionName="0: Interactive Short; 1: Auto Short; 2: Interactive Full; 3: Auto Full" SelectedModeDefaultValue="2">
+	  <ModeValue Mode="0">Interactive Short</ModeValue>
+	  <ModeValue Mode="1">Auto Short</ModeValue>
+	  <ModeValue Mode="2">Interactive Full</ModeValue>
+	  <ModeValue Mode="3">Auto Full</ModeValue>
+	</OptionTesting>
+	<OptionTesting OptionTitle="Select Power Cycle Method" OptionName="0: ULINK Power Control for SATA/SAS Device; 1: ULINK Power Control for PCIe Device; 2: Others" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">ULINK Power Control for SATA/SAS Device</ModeValue>
+	  <ModeValue Mode="1">ULINK Power Control for PCIe Device</ModeValue>
+	  <ModeValue Mode="2">Others</ModeValue>
+	</OptionTesting>	
+	<OptionTesting OptionTitle="Standby Immediate before Power Cycle?" OptionName="0: NO; 1: YES" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">NO</ModeValue>
+	  <ModeValue Mode="1">YES</ModeValue>
+	</OptionTesting>
+  </Configuration>
+	
+  <Configuration NameScriptConfiguaration="RandomPIOCmdTime_Distribution.srt">
+	<OptionTesting OptionTitle="Select test option" OptionName="0: Interactive Short; 1: Auto Short; 2: Interactive Full; 3: Auto Full" SelectedModeDefaultValue="2">
+	  <ModeValue Mode="0">Interactive Short</ModeValue>
+	  <ModeValue Mode="1">Auto Short</ModeValue>
+	  <ModeValue Mode="2">Interactive Full</ModeValue>
+	  <ModeValue Mode="3">Auto Full</ModeValue>
+	</OptionTesting>
+	<OptionTesting OptionTitle="Select Power Cycle Method" OptionName="0: ULINK Power Control for SATA/SAS Device; 1: ULINK Power Control for PCIe Device; 2: Others" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">ULINK Power Control for SATA/SAS Device</ModeValue>
+	  <ModeValue Mode="1">ULINK Power Control for PCIe Device</ModeValue>
+	  <ModeValue Mode="2">Others</ModeValue>
+	</OptionTesting>	
+	<OptionTesting OptionTitle="Standby Immediate before Power Cycle?" OptionName="0: NO; 1: YES" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">NO</ModeValue>
+	  <ModeValue Mode="1">YES</ModeValue>
+	</OptionTesting>
+  </Configuration>
+
+  <Configuration NameScriptConfiguaration="ProtocolMain_Auto.srt">
+	<OptionTesting OptionTitle="Select test option" OptionName="0: Interactive Short; 1: Auto Short; 2: Interactive Full; 3: Auto Full" SelectedModeDefaultValue="2">
+	  <ModeValue Mode="0">Interactive Short</ModeValue>
+	  <ModeValue Mode="1">Auto Short</ModeValue>
+	  <ModeValue Mode="2">Interactive Full</ModeValue>
+	  <ModeValue Mode="3">Auto Full</ModeValue>
+	</OptionTesting>
+	<OptionTesting OptionTitle="Select Power Cycle Method" OptionName="0: ULINK Power Control for SATA/SAS Device; 1: ULINK Power Control for PCIe Device; 2: Others" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">ULINK Power Control for SATA/SAS Device</ModeValue>
+	  <ModeValue Mode="1">ULINK Power Control for PCIe Device</ModeValue>
+	  <ModeValue Mode="2">Others</ModeValue>
+	</OptionTesting>	
+	<OptionTesting OptionTitle="Standby Immediate before Power Cycle?" OptionName="0: NO; 1: YES" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">NO</ModeValue>
+	  <ModeValue Mode="1">YES</ModeValue>
+	</OptionTesting>
+  </Configuration>
+
+  <Configuration NameScriptConfiguaration="Regression_GenDataIntegrity_TestBatch.srt">
+	<OptionTesting OptionTitle="Write and Read disk with Data compare" OptionName="Running Time in minute for one test case (>10)(default:12*60 min)" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="80">80</ModeValue>
+	</OptionTesting>
+  </Configuration>
+
+  <Configuration NameScriptConfiguaration="NCQ.srt">
+	<OptionTesting OptionTitle="Select test option" OptionName="0: Interactive w/Brief; 1: Auto w/Brief; 2: Interactive w/Detail; 3: Auto w/Detail; 4: Halt when Failed (default: 4)" SelectedModeDefaultValue="4">
+	  <ModeValue Mode="0">Interactive w/Brief</ModeValue>
+	  <ModeValue Mode="1">Auto w/Brief</ModeValue>
+	  <ModeValue Mode="2">Interactive w/Detail</ModeValue>
+	  <ModeValue Mode="3">Auto w/Detail</ModeValue>
+	  <ModeValue Mode="4">Halt when Failed (default: 4)</ModeValue>
+	</OptionTesting>
+	<OptionTesting OptionTitle="Select Power Cycle Method" OptionName="0: ULINK Power Control for SATA/SAS Device; 1: ULINK Power Control for PCIe Device; 2: Others" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">ULINK Power Control for SATA/SAS Device</ModeValue>
+	  <ModeValue Mode="1">ULINK Power Control for PCIe Device</ModeValue>
+	  <ModeValue Mode="2">Others</ModeValue>
+	</OptionTesting>	
+	<OptionTesting OptionTitle="Standby Immediate before Power Cycle?" OptionName="0: NO; 1: YES" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">NO</ModeValue>
+	  <ModeValue Mode="1">YES</ModeValue>
+	</OptionTesting>
+	<OptionTesting OptionTitle="NCQ" OptionName="Please select the valid test case ID in the range [ 0 :8 ]:" SelectedModeDefaultValue="0">
+	  <ModeValue Mode="0">0</ModeValue>
+	  <ModeValue Mode="1">1</ModeValue>
+	  <ModeValue Mode="2">2</ModeValue>
+	  <ModeValue Mode="3">3</ModeValue>
+	  <ModeValue Mode="4">4</ModeValue>
+	  <ModeValue Mode="5">5</ModeValue>
+	  <ModeValue Mode="6">6</ModeValue>
+	  <ModeValue Mode="7">7</ModeValue>
+	  <ModeValue Mode="8">8</ModeValue>
+	</OptionTesting>	
+  </Configuration>
+</ConfigurationsInformation>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+DMController/bin/
+DMController/obj/
+ErrorHandling/obj/
+WindowHandleConsole/bin/
+ErrorHandling/
+DMController/packages.config
+WindowHandleConsole/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+WindowHandleConsole/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+WindowHandleConsole/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+WindowHandleConsole/obj/Debug/WindowHandleConsole.csproj.FileListAbsolute.txt
+packages/MahApps.Metro.1.1.2.0/MahApps.Metro.1.1.2.0.nupkg
+packages/MahApps.Metro.1.1.2.0/lib/net40/MahApps.Metro.XML
+packages/MahApps.Metro.1.1.2.0/lib/net45/MahApps.Metro.XML
+packages/MahApps.Metro.1.1.2.0/tools/install.ps1
+packages/repositories.config
+DMController/Images/
+WindowHandleConsole/

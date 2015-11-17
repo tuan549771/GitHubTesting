@@ -1,0 +1,40 @@
+﻿<Controls:MetroWindow x:Class="DMController.Views.ConfigurationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:control="clr-namespace:DMController.Views"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow"
+        xmlns:viewmodel="clr-namespace:DMController.ViewModels"
+        Icon="/Images/virtium.png"
+        GlowBrush="{DynamicResource AccentColorBrush}" TextBlock.TextAlignment="Center"
+        Title="Configuration Window" MaxHeight="700" Width="680">
+    <Window.Resources>
+        <viewmodel:ConfigurationViewModel x:Key="ConfigurationViewModel"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+        <Border BorderBrush="Gray" BorderThickness="1,0,1,2">
+            <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Auto" Grid.Row="0" Margin="10,10,0,30"
+                      DataContext="{StaticResource ConfigurationViewModel}">
+                <ItemsControl x:Name="lview">
+                    <ItemsControl.ItemTemplate>
+                        <HierarchicalDataTemplate ItemsSource="{Binding ListOptionTesting}">
+                            <control:CaptionControl/>
+                        </HierarchicalDataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </Border>
+
+        <StackPanel Orientation="Horizontal" Margin="0,0,80,40" HorizontalAlignment="Right" Grid.Row="1" >
+            <Button IsCancel="True" Height="33" Width="100"  HorizontalAlignment="Left" FontSize="16"
+                    Style="{StaticResource SquareMetroButton}" Background="Gray">Cancel</Button>
+            <Button IsDefault="True" Content="Save" Click="Save_Button_Click" Height="33" Width="100" Margin="80,0,0,0"
+                    x:Name="btnSave" Style="{StaticResource SquareMetroButton}" Background="Gray" FontSize="16"/>
+        </StackPanel>
+    </Grid>
+</Controls:MetroWindow>

@@ -1,0 +1,34 @@
+﻿<Controls:MetroWindow x:Class="DMController.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:view="clr-namespace:DMController.Views"
+        xmlns:viewmodel="clr-namespace:DMController.ViewModels" 
+        xmlns:converters="clr-namespace:DMController.Converters"
+        Title="DRIVE MASTER CONTROLLER" ShowSystemMenuOnRightClick="True"
+        Height="680" Width="1100" 
+        WindowStartupLocation="CenterScreen"
+        Icon="/Images/virtium.png"
+        GlowBrush="{DynamicResource AccentColorBrush}" TextBlock.TextAlignment="Center"
+        >
+
+   <Grid>
+        <TabControl Padding="0">
+            <TabItem>
+                <TabControl>
+                    <TabItem Header="TEST TRACE" Style="{StaticResource AzureTabItem}">
+                        <view:TestTraceControl/>
+                    </TabItem>
+                    <!--<TabItem Header="INFORMATION TESTING" Style="{StaticResource AzureTabItem}">
+                    </TabItem>-->
+                </TabControl>
+            </TabItem>
+        </TabControl>
+    </Grid>
+
+</Controls:MetroWindow >
+
+
+
+    
+
